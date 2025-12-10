@@ -8,13 +8,13 @@ interface Props {
 const UserForm: React.FC<Props> = ({addUser}) => {
     const [online, setOnline] = useState(false);
 
-    const changeOnline = (e) => {
+    const changeOnline = (e: React.ChangeEvent<HTMLInputElement>) => {
         setOnline(e.target.checked);
     }
 
     const [role, setRole] = useState('User');
 
-    const changeRole = (e) => {
+    const changeRole = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setRole(e.target.value);
     }
 

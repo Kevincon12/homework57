@@ -39,8 +39,8 @@ const App = () => {
                     <UserForm addUser={addUser} />
                 </div>
 
-                <div className='col-sm'>
-                    <Users />
+                <div className='col-sm mt-2'>
+                    <Users users={user} />
                 </div>
 
             </div>
